@@ -17,7 +17,7 @@ const flash = require("connect-flash");
 const passport = require("passport");
 const localStrategy = require("passport-local");
 const User = require("./models/user.js");
-const listingController = require("./controllers/listings.js");
+
 
 
 const listingRouter = require("./routes/listing.js");
@@ -73,7 +73,9 @@ const sessionOptions = {
 };
 
 
-app.get("/", listingController.index);
+app.get("/", (req, res) => {
+    res.redirect("/listings");
+});
 
 
 
