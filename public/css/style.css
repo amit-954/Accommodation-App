@@ -1,3 +1,8 @@
+
+
+
+
+
 body {
     font-family: "Plus Jakarta Sans", sans-serif !important;
     display: flex;
@@ -7,6 +12,7 @@ body {
 
 .container {
     flex: 1;
+    
 }
 
 .navbar {
@@ -116,3 +122,37 @@ body {
     padding-left: 0;
     padding-right: 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#alert {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.alert i {
+    margin-right: 10px;
+}
+
+

@@ -1,7 +1,6 @@
 if (process.env.NODE_ENV != "production") {
     require("dotenv").config();
 }
-console.log(process.env.SECRET);
 
 
 const express = require("express");
@@ -96,15 +95,6 @@ app.use((req, res, next) => {
     next();
 });
 
-// app.get("/demouser", async (req, res) => {
-//     let fakeUser = new User({
-//         email: "student@gmail.com",
-//         username: "delta-student",
-//     });
-//     let registerUser = await User.register(fakeUser, "helloworld");
-//     res.send(registerUser);
-// })
-
 
 app.use("/listings", listingRouter);
 app.use("/listings/:id/reviews", reviewRouter);
@@ -119,7 +109,6 @@ app.all("*", (req, res, next) => {
 app.use((err, req, res, next) => {
     let { statusCode = 500, message = "Something went wrong" } = err;
     res.status(statusCode).render("error.ejs", { err });
-    //res.status(statusCode).send(message);
 });
 
 
