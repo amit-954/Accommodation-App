@@ -72,7 +72,7 @@ body {
 .footer {
 	padding: 25px 0;
 	background-color: #f7f7f7;
-	height: 9rem;
+	height: 150px;
 }
 
 .footer .social {
@@ -357,6 +357,8 @@ body {
 		grid-template-columns: 1fr;
 	}
 }
+
+
 
 @media (max-width: 990px) and (min-width: 560px) {
 	.review-list {
