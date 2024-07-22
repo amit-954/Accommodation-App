@@ -491,3 +491,11 @@ body {
 	align-items: center;
 
 }
+
+@media (max-width: 1000px) {
+
+	.filters .left-arrow.active,
+	.filters .right-arrow.active {
+		display: none;
+	}
+}
