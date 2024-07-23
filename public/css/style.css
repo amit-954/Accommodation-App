@@ -368,13 +368,14 @@ body {
 
 /* alert */
 #alert {
-	max-width: 400px;
+	max-width: 370px;
 	margin: 0 auto;
-	padding: 10px;
+	padding: 8px;
 }
 
 .alert i {
 	margin-right: 10px;
+	margin-left: 5px;
 }
 
 
